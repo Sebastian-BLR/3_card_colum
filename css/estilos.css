@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+
+font-family: 'Lexend Deca', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body, button, span{
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 915px;
+    height: 500px; 
+    border-radius: 10px;
+}
+
+
+
+.card{
+    padding: 47px;
+}
+
+.card h1{
+    font-family:'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 41px;
+    color:hsl(0, 0%, 95%);
+}
+
+.card p{
+    margin-top: 32px;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 1.65;
+}
+
+.color-1{background-color: hsl(31, 77%, 52%) ;}
+.color-2{background-color: hsl(184, 100%, 22%);}
+.color-3{background-color: hsl(179, 100%, 13%);}
+
+.contenedor-cards .card:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.contenedor-cards .card:last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+.card button{
+    font-family: 'Lexend Deca', sans-serif; 
+    height: 48px;
+    width: 140px;
+    margin: 0;
+    margin-top: 66px;
+    border: none;  
+    cursor: pointer;
+    border-radius: 34px;
+}
+
+
+.color-1 button{color: hsl(31, 77%, 52%) ;}
+.color-2 button{color: hsl(184, 100%, 22%) ;}
+.color-3 button{color: hsl(179, 100%, 13%);}
+
+
+
